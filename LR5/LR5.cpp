@@ -85,3 +85,29 @@ public:
         printf("~Desc()\n");
     }
 };
+void func1(Base obj) {
+    printf("func1(Base obj)\n");
+}
+
+void func2(Base* obj) {
+    printf("func2(Base* obj)\n");
+}
+
+void func3(Base& obj) {
+    printf("func3(Base& obj)\n");
+}
+
+Base func_1(Base obj) {
+    printf("Base func_1(Base obj)\n");
+    return obj;
+}
+
+Base* func_2(Base* obj) {
+    printf("Base* func_2(Base* obj)\n");
+    return obj;
+}
+
+Base& func_3(Base& obj) {
+    printf("Base& func_3(Base& obj)\n");
+    return obj;
+}
